@@ -1,0 +1,106 @@
+{
+  "profile_analysis": {
+    "matching_score": 90,
+    "key_skills": [
+      "Python",
+      "AI/ML",
+      "Leadership",
+      "Communication",
+      "AWS"
+    ],
+    "strengths": [
+      "6 ans d'expérience en développement Python, dépassant le minimum requis de 5 ans.",
+      "Expérience de 3 ans en tant que chef d'équipe technique, correspondant à la responsabilité de leadership.",
+      "Projets ML/AI réussis, répondant à l'exigence d'expérience en AI/ML.",
+      "Compétences en cloud avec AWS, pertinent pour l'architecture de solutions cloud."
+    ],
+    "gaps": [
+      "Aucune mention spécifique d'expérience en architecture de solutions cloud, bien que des compétences en AWS soient présentes.",
+      "Pas d'informations sur des projets liés à l'architecture technique ou à la conception de systèmes."
+    ],
+    "interview_topics": [
+      "Exemples de projets ML/AI sur lesquels il a travaillé et son rôle dans ces projets.",
+      "Détails sur son expérience avec l'architecture des solutions cloud et des défis rencontrés.",
+      "Approche pour le leadership d'équipe et la gestion des conflits techniques."
+    ]
+  },
+  "interview_plan": {
+    "technical_questions": [
+      "Pouvez-vous décrire un projet spécifique où vous avez utilisé Python pour développer une application complexe ? Quels étaient les défis techniques et comment les avez-vous surmontés ?",
+      "Parlez-nous de votre expérience avec l'intelligence artificielle et l'apprentissage automatique. Quels algorithmes avez-vous utilisés et dans quel contexte ?",
+      "Comment avez-vous intégré des solutions AWS dans vos projets précédents ? Pouvez-vous donner un exemple concret de l'architecture que vous avez mise en place ?",
+      "Avez-vous de l'expérience dans la conception d'architectures cloud ? Si oui, pouvez-vous décrire un projet où vous avez dû prendre des décisions architecturales importantes ?",
+      "Comment gérez-vous les performances et l'optimisation dans vos applications Python ? Quels outils ou techniques utilisez-vous ?"
+    ],
+    "behavioral_questions": [
+      "Décrivez une situation où vous avez dû gérer un conflit au sein de votre équipe technique. Quelle a été votre approche et quel a été le résultat ?",
+      "Pouvez-vous donner un exemple d'un projet où vous avez dû collaborer avec des parties prenantes non techniques ? Comment avez-vous adapté votre communication ?",
+      "Racontez-nous une expérience où vous avez dû encadrer un membre de votre équipe qui avait des difficultés. Comment avez-vous abordé la situation ?",
+      "Avez-vous déjà échoué dans un projet ? Que s'est-il passé et quelles leçons en avez-vous tirées ?",
+      "Comment établissez-vous des priorités lorsqu'il y a plusieurs tâches ou projets à gérer en même temps ?"
+    ],
+    "scenarios": [
+      {
+        "situation": "Votre équipe rencontre un obstacle technique majeur sur un projet d'IA. Comment gérez-vous la situation pour trouver une solution ?",
+        "objectifs": "Évaluer la capacité à résoudre des problèmes et à diriger une équipe sous pression."
+      },
+      {
+        "situation": "Vous devez concevoir une nouvelle architecture pour une application cloud afin d'améliorer sa scalabilité. Quelles étapes suivez-vous pour concevoir cette architecture ?",
+        "objectifs": "Évaluer la pensée critique et les compétences en architecture technique."
+      },
+      {
+        "situation": "Un membre de l'équipe ne communique pas efficacement et cela impacte le projet. Comment aborderiez-vous ce problème ?",
+        "objectifs": "Évaluer les compétences en gestion des personnes et en communication."
+      }
+    ],
+    "evaluation_criteria": [
+      "Capacité à expliquer des concepts techniques de manière claire et accessible.",
+      "Compétences démontrées en leadership et en gestion d'équipe dans des situations complexes.",
+      "Capacité à résoudre des problèmes techniques et à prendre des décisions éclairées.",
+      "Communication efficace, tant avec des équipes techniques qu'avec des parties prenantes non techniques.",
+      "Approche structurée dans la conception et l'architecture de solutions cloud."
+    ]
+  },
+  "final_recommendation": {
+    "summary": "Le candidat présente un excellent profil avec une expérience solide en développement Python, AI/ML et leadership. Ses compétences en AWS sont pertinentes, bien qu'il manque d'expérience spécifique en architecture de solutions cloud. Sa performance lors de l'entretien a été jugée excellente sur le plan technique et très bonne en communication.",
+    "evaluation": {
+      "matching_score": 90,
+      "key_skills": [
+        "Python",
+        "AI/ML",
+        "Leadership",
+        "Communication",
+        "AWS"
+      ],
+      "strengths": [
+        "6 ans d'expérience en développement Python, dépassant le minimum requis de 5 ans.",
+        "Expérience de 3 ans en tant que chef d'équipe technique, correspondant à la responsabilité de leadership.",
+        "Projets ML/AI réussis, répondant à l'exigence d'expérience en AI/ML.",
+        "Compétences en cloud avec AWS, pertinentes pour l'architecture de solutions cloud."
+      ],
+      "gaps": [
+        "Aucune mention spécifique d'expérience en architecture de solutions cloud, bien que des compétences en AWS soient présentes.",
+        "Pas d'informations sur des projets liés à l'architecture technique ou à la conception de systèmes."
+      ],
+      "interview_performance": {
+        "technical_performance": "Excellent",
+        "communication_skills": "Très bon",
+        "technical_questions_score": 9,
+        "behavioral_score": 8,
+        "overall_impression": "Candidat prometteur avec une excellente maîtrise technique"
+      }
+    },
+    "recommendation": "GO",
+    "next_steps": [
+      "Organiser une rencontre avec l'équipe technique pour discuter des compétences en architecture cloud.",
+      "Proposer une formation ou un projet pilote pour renforcer l'expérience en architecture de solutions cloud.",
+      "Élaborer un plan d'intégration pour maximiser l'apport du candidat dans l'équipe."
+    ],
+    "risk_factors": [
+      "Manque d'expérience documentée en architecture de solutions cloud, ce qui pourrait poser des défis dans des projets nécessitant cette expertise.",
+      "Nécessité de s'assurer que le candidat peut s'adapter rapidement aux spécificités des projets cloud de l'entreprise."
+    ]
+  },
+  "error": null,
+  "status": "completed"
+}

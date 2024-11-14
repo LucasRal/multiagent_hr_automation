@@ -1,0 +1,80 @@
+{
+  "profile_analysis": {
+    "matching_score": 90,
+    "key_skills": [
+      "Python",
+      "AI/ML",
+      "Leadership",
+      "Communication",
+      "AWS",
+      "TensorFlow"
+    ],
+    "strengths": [
+      "Plus de 5 ans d'expérience en développement Python",
+      "Expérience en leadership technique avec 3 ans en tant que chef d'équipe",
+      "Projets ML/AI réussis démontrant une expérience pertinente",
+      "Compétences solides en communication technique"
+    ],
+    "gaps": [
+      "Détails sur des projets spécifiques en architecture de solutions cloud",
+      "Exemples concrets de leadership technique et impact sur l'équipe",
+      "Expérience avec d'autres technologies ou outils cloud en plus d'AWS"
+    ],
+    "interview_topics": [
+      "Approche pour l'architecture de solutions cloud",
+      "Exemples de projets ML/AI et leur impact sur les résultats",
+      "Méthodes utilisées pour diriger et motiver une équipe technique",
+      "Scénarios de communication technique avec des parties prenantes non techniques"
+    ]
+  },
+  "interview_plan": {
+    "technical_questions": [
+      "Pouvez-vous décrire une application complexe que vous avez développée en Python et les défis que vous avez rencontrés ?",
+      "Comment abordez-vous l'architecture d'une solution cloud ? Quels facteurs considérez-vous comme les plus critiques ?",
+      "Pouvez-vous expliquer comment vous avez appliqué des techniques d'AI/ML dans vos projets précédents ?",
+      "Avez-vous de l'expérience avec des outils ou services cloud autres qu'AWS ? Si oui, lesquels et comment les avez-vous utilisés ?",
+      "Comment évaluez-vous la performance d'un modèle ML et quelles métriques utilisez-vous ?"
+    ],
+    "behavioral_questions": [
+      "Décrivez une situation où vous avez dû prendre une décision difficile en tant que leader technique. Quelles ont été les conséquences ?",
+      "Comment évaluez-vous l'efficacité de votre communication avec les parties prenantes non techniques ? Pouvez-vous donner un exemple ?",
+      "Pouvez-vous parler d'une fois où vous avez dû motiver une équipe face à un projet difficile ? Quelles stratégies avez-vous utilisées ?",
+      "Racontez-nous une expérience où vous avez reçu des critiques sur votre travail. Comment avez-vous réagi et quelles leçons en avez-vous tirées ?"
+    ],
+    "scenarios": [
+      "Imaginez que vous êtes le leader d'une équipe de développement travaillant sur un projet de ML qui prend du retard. Comment allez-vous aborder la situation avec votre équipe ?",
+      "Vous devez concevoir une architecture cloud pour une nouvelle application qui doit être évolutive. Quels éléments clés incluriez-vous dans votre proposition et pourquoi ?",
+      "Un membre de l'équipe a du mal à comprendre un concept technique essentiel. Comment abordez-vous cette situation pour l'aider à progresser ?",
+      "Vous avez reçu une demande d'une partie prenante non technique concernant une fonctionnalité. Comment allez-vous recueillir ses besoins et traduire cela en spécifications techniques ?"
+    ],
+    "evaluation_criteria": [
+      "Capacité à expliquer des concepts techniques de manière claire et accessible",
+      "Expérience avérée dans le développement et l'architecture de solutions cloud",
+      "Compétences de leadership démontrées et impact sur l'équipe",
+      "Capacité à gérer des situations difficiles et à motiver les membres de l'équipe",
+      "Approche méthodique et analytique dans la résolution de problèmes techniques"
+    ]
+  },
+  "final_recommendation": {
+    "summary": "Le candidat possède un score de correspondance élevé de 90, avec une solide expérience de plus de 5 ans en développement Python, une expertise en AI/ML, ainsi qu'une expérience en leadership technique. Il a démontré d'excellentes compétences techniques et de communication, bien qu'il présente quelques lacunes concernant des détails spécifiques sur des projets cloud et des exemples concrets de leadership.",
+    "evaluation": {
+      "technical_performance": "Excellent",
+      "communication_skills": "Très bon",
+      "technical_questions_score": 9,
+      "behavioral_score": 8,
+      "overall_impression": "Candidat prometteur avec une excellente maîtrise technique, bien que des détails supplémentaires soient nécessaires sur certains projets et expériences."
+    },
+    "recommendation": "GO",
+    "next_steps": [
+      "Organiser un second entretien pour approfondir les lacunes identifiées, notamment sur l'architecture de solutions cloud et des exemples de leadership.",
+      "Demander au candidat de préparer des études de cas ou des exemples concrets de projets passés, en particulier ceux en lien avec des technologies cloud autres qu'AWS.",
+      "Impliquer un membre senior de l'équipe technique pour évaluer plus en profondeur les compétences en architecture cloud."
+    ],
+    "risk_factors": [
+      "Manque de détails sur des projets spécifiques en architecture de solutions cloud.",
+      "Nécessité de valider l'impact de son leadership sur l'équipe à travers des exemples concrets."
+    ]
+  },
+  "error": null,
+  "status": "completed"
+}
