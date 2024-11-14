@@ -1,0 +1,60 @@
+{
+  "profile_analysis": {
+    "matching_score": 95,
+    "key_skills": [
+      "Python",
+      "AI/ML",
+      "Leadership",
+      "Communication",
+      "AWS"
+    ],
+    "strengths": [
+      "Plus de 6 ans d'expérience en développement Python",
+      "Expérience en leadership technique pendant 3 ans",
+      "Projets réussis en machine learning et intelligence artificielle",
+      "Compétences en communication technique"
+    ],
+    "gaps": [
+      "Détails sur l'expérience spécifique en architecture de solutions cloud",
+      "Exemples concrets de projets cloud menés"
+    ],
+    "interview_topics": [
+      "Expérience en architecture de solutions cloud",
+      "Exemples de leadership technique dans des projets passés",
+      "Approches utilisées dans les projets AI/ML",
+      "Situation où la communication technique a joué un rôle clé"
+    ]
+  },
+  "interview_plan": {
+    "technical_questions": [
+      "Pouvez-vous décrire un projet où vous avez conçu une architecture de solution cloud ? Quels défis avez-vous rencontrés et comment les avez-vous surmontés ?",
+      "Quels sont les principaux avantages d'utiliser AWS pour le développement d'applications Python ? Avez-vous une expérience spécifique avec des services AWS ?",
+      "Comment intégrez-vous des modèles de machine learning dans une application Python ? Pouvez-vous donner un exemple d'un projet sur lequel vous avez travaillé ?",
+      "Quelle est votre approche pour assurer la scalabilité et la performance des applications cloud ?",
+      "Avez-vous déjà utilisé des frameworks spécifiques pour le développement d'applications AI/ML ? Si oui, lesquels et pourquoi les avez-vous choisis ?"
+    ],
+    "behavioral_questions": [
+      "Décrivez une situation où vous avez dû diriger une équipe technique. Comment avez-vous motivé votre équipe et géré les différents points de vue ?",
+      "Pouvez-vous nous parler d'un conflit que vous avez eu dans une équipe de développement et comment vous l'avez résolu ?",
+      "Racontez-nous une fois où vous avez dû expliquer un concept technique complexe à un public non technique. Comment avez-vous adapté votre communication ?",
+      "Avez-vous déjà eu l'opportunité de mentor ou de former des développeurs juniors ? Si oui, comment avez-vous abordé cette responsabilité ?",
+      "Comment gérez-vous le stress et les délais serrés dans un projet ? Pouvez-vous donner un exemple ?"
+    ],
+    "scenarios": [
+      "Imaginez que vous êtes le lead technique d'un projet d'application cloud. L'équipe rencontre des problèmes de performance. Quelles étapes suivriez-vous pour identifier et résoudre le problème ?",
+      "Vous êtes en réunion avec des parties prenantes non techniques qui souhaitent comprendre les implications d'un projet d'AI/ML. Comment structureriez-vous votre présentation pour qu'elle soit claire et engageante ?",
+      "Un membre de votre équipe a proposé une solution architecturalement risquée pour un projet cloud. Comment réagiriez-vous ? Quels éléments prendriez-vous en compte pour prendre une décision ?",
+      "Vous devez prioriser plusieurs tâches critiques dans un projet. Comment décidez-vous de ce qui doit être traité en premier et comment communiquez-vous ces priorités à l'équipe ?"
+    ],
+    "evaluation_criteria": [
+      "Compréhension approfondie des architectures cloud et des services AWS.",
+      "Capacité à démontrer des expériences concrètes en leadership technique.",
+      "Clarté et efficacité dans la communication technique.",
+      "Approche méthodique face à des problèmes de performance et de scalabilité.",
+      "Compétences en mentorat et en gestion d'équipe."
+    ]
+  },
+  "final_recommendation": null,
+  "error": null,
+  "status": "interview_planned"
+}
