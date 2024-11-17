@@ -1,6 +1,10 @@
 from langchain.prompts import ChatPromptTemplate
 from typing import Dict
+import json
 
+class ProfileAnalyzerValidationError(Exception):
+    """Custom exception for profile analyzer validation errors"""
+    pass
 
 class ProfileAnalyzerAgent:
     def __init__(self, llm):
@@ -34,12 +38,49 @@ class ProfileAnalyzerAgent:
             ("system", self.template)
         ])
 
+    def validate_inputs(self, job_description: str, cv_content: str) -> None:
+        """Validate inputs before processing"""
+        if not job_description or job_description.isspace():
+            raise ProfileAnalyzerValidationError("Job description cannot be empty")
+        
+        if not cv_content or cv_content.isspace():
+            raise ProfileAnalyzerValidationError("CV content cannot be empty")
+            
+        if len(job_description.split()) < 10:
+            raise ProfileAnalyzerValidationError("Job description too short - needs at least 10 words")
+            
+        if len(cv_content.split()) < 10:
+            raise ProfileAnalyzerValidationError("CV content too short - needs at least 10 words")
+            
+        # Check for required sections in job description
+        required_job_sections = ["responsabilités", "requis"]
+        if not any(section.lower() in job_description.lower() for section in required_job_sections):
+            raise ProfileAnalyzerValidationError("Job description missing required sections (Responsabilités, Requis)")
+            
+        # Check for required sections in CV
+        required_cv_sections = ["expérience", "compétences"]
+        if not any(section.lower() in cv_content.lower() for section in required_cv_sections):
+            raise ProfileAnalyzerValidationError("CV missing required sections (Expérience, Compétences)")
+
     def analyze(self, job_description: str, cv_content: str) -> Dict:
-        messages = self.prompt.format_messages(
-            job_description=job_description,
-            cv_content=cv_content
-        )
-        response = self.llm.invoke(messages)
-        return response.content
-
-
+        """Analyze profile with validation"""
+        try:
+            # Validate inputs first
+            self.validate_inputs(job_description, cv_content)
+            
+            # Format messages using the template
+            messages = self.prompt.format_messages(
+                job_description=job_description,
+                cv_content=cv_content
+            )
+            
+            # Get response from LLM
+            response = self.llm.invoke(messages)
+            
+            try:
+                return json.loads(response.content)
+            except json.JSONDecodeError:
+                raise ProfileAnalyzerValidationError("LLM response was not in valid JSON format")
+                
+        except Exception as e:
+            raise ProfileAnalyzerValidationError(f"Analysis failed: {str(e)}")

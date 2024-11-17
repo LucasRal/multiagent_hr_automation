@@ -4,8 +4,12 @@ from agents.interviewer import InterviewerAgent
 from agents.hr_coordinator import HRCoordinatorAgent
 from utils.json_helpers import ensure_json
 from core.config import create_llm
+from utils.logging_utils import log_node_execution, log_transition, setup_logger
 import json
 
+state_logger = setup_logger("agent_state_tracker")
+
+@log_node_execution("profile_analysis")
 def analyze_profile(state: AgentState) -> AgentState:
     try:
         llm = create_llm()
@@ -23,7 +27,7 @@ def analyze_profile(state: AgentState) -> AgentState:
     except Exception as e:
         return state.update(error=str(e))
 
-
+@log_node_execution("interview_preparation")
 def prepare_interview(state: AgentState) -> AgentState:
     try:
         llm = create_llm()
@@ -56,6 +60,7 @@ def prepare_interview(state: AgentState) -> AgentState:
             error=str(e)
         )
 
+@log_node_execution("results_synthesis")
 def synthesize_results(state: AgentState) -> AgentState:
     try:
         llm = create_llm()
@@ -89,8 +94,58 @@ def synthesize_results(state: AgentState) -> AgentState:
             error=str(e)
         )
 
+
+@log_transition
 def should_continue(state: AgentState) -> str:
-    if state.error:  # Use dot notation
+    # Log the complete state
+    state_logger.info(f"\n{'='*50}")
+    state_logger.info("Current AgentState:")
+    
+    # Log basic attributes
+    state_logger.info(f"Current Step: {state.current_step}")
+    state_logger.info(f"Error State: {state.error if state.error else 'No error'}")
+    
+    # Log job description and CV content (truncated if too long)
+    max_length = 50
+    state_logger.info(f"\nJob Description: {state.job_description[:max_length]}...")
+    state_logger.info(f"\nCV Content: {state.cv_content[:max_length]}...")
+    
+    # Log JSON
+    if state.profile_analysis:
+        try:
+            analysis = json.loads(state.profile_analysis)
+            state_logger.info(f"\nProfile Analysis:\n{json.dumps(analysis, indent=2, ensure_ascii=False)}")
+        except json.JSONDecodeError:
+            state_logger.info(f"\nProfile Analysis (raw):\n{state.profile_analysis}")
+    
+    if state.interview_plan:
+        try:
+            plan = json.loads(state.interview_plan)
+            state_logger.info(f"\nInterview Plan:\n{json.dumps(plan, indent=2, ensure_ascii=False)}")
+        except json.JSONDecodeError:
+            state_logger.info(f"\nInterview Plan (raw):\n{state.interview_plan}")
+    
+    if state.interview_feedback:
+        try:
+            feedback = json.loads(state.interview_feedback)
+            state_logger.info(f"\nInterview Feedback:\n{json.dumps(feedback, indent=2, ensure_ascii=False)}")
+        except json.JSONDecodeError:
+            state_logger.info(f"\nInterview Feedback (raw):\n{state.interview_feedback}")
+    
+    if state.final_recommendation:
+        try:
+            recommendation = json.loads(state.final_recommendation)
+            state_logger.info(f"\nFinal Recommendation:\n{json.dumps(recommendation, indent=2, ensure_ascii=False)}")
+        except json.JSONDecodeError:
+            state_logger.info(f"\nFinal Recommendation (raw):\n{state.final_recommendation}")
+    
+    # Log complete state as dictionary for debugging
+    state_logger.debug(f"\nComplete State Dictionary:\n{json.dumps(state.to_dict(), indent=2, ensure_ascii=False)}")
+    
+    state_logger.info(f"{'='*50}\n")
+    
+    # Conditional logic
+    if state.error:
         return "error"
     
     if state.current_step == "profile_analyzed":

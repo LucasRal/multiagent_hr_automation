@@ -67,3 +67,5 @@ Thumbs.db
 
 config.local.yaml
 local_settings.py
+
+outputs/

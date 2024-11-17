@@ -6,16 +6,23 @@ from workflow.nodes import (
     synthesize_results,
     should_continue
 )
+from utils.logging_utils import setup_logger
+
+logger = setup_logger("hr_workflow.graph")
 
 def create_hr_workflow() -> Graph:
+    logger.info("Creating HR workflow graph")
+    
     workflow = StateGraph(AgentState)
     
     # Add nodes
+    logger.debug("Adding workflow nodes")
     workflow.add_node("analyze_profile", analyze_profile)
     workflow.add_node("prepare_interview", prepare_interview)
     workflow.add_node("synthesize", synthesize_results)
     
     # Define the edges
+    logger.debug("Configuring workflow transitions")
     workflow.add_conditional_edges(
         "analyze_profile",
         should_continue,
@@ -48,4 +55,5 @@ def create_hr_workflow() -> Graph:
     
     workflow.set_entry_point("analyze_profile")
     
+    logger.info("HR workflow graph created successfully")
     return workflow.compile()
