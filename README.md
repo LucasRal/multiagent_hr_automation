@@ -1,6 +1,6 @@
 # Multi-Agent HR Automation System
 
-A sophisticated HR automation system that leverages multiple AI agents orchestrated through LangGraph to automate and enhance the recruitment process.
+A simple (yet quite sophisticated use case) HR automation system that leverages multiple AI agents orchestrated through LangGraph to automate and enhance the recruitment process.
 
 ## 🌟 Features
 
